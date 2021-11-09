@@ -1,0 +1,14 @@
+{
+    "name": "site/pizza",
+    "description": "site de commandes par internet",
+    "type": "project",
+    "license": "1",
+    "authors": [
+        {
+            "name": "enireves",
+            "email": "enirevescode@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
