@@ -1,0 +1,131 @@
+/*!
+Theme Name: montheme
+Theme URI: http://underscores.me/
+Author: enireves
+Author URI: http://enirevescode.fr/
+Description: est 1 theme propriétaire pour la vente d'une maison en Finistère
+Version: 2.0.0
+Text Domain: montheme
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root{
+   --dark: #30336b;
+}
+
+.bg_light{
+   background-color: var(--dark) !important;
+}
+
+body {
+   font-family: Montserrat;
+   margin: 0;
+   
+}
+
+/* Début entête du site */
+
+#header {
+
+   max-width : 1000px;
+   margin: 0 auto;
+
+}
+
+.jumbotron {
+   background-image: url(assets/decouvrir-saint-pol1.jpg);
+   height: 900px;
+   background-repeat: no-repeat;
+   /* margin-bottom: 50px; */
+}
+
+
+h1{
+   font-weight: 600;
+   font-size: 40px;
+   color: #fff;
+   text-align: center;
+   margin-top: 250px;
+   margin-bottom: 100px;
+   letter-spacing: 2px;
+   
+}
+
+.lead{
+   color: aliceblue;
+   font-weight : 500;
+   font-size : 35px;
+   word-spacing: 3px;
+   letter-spacing: 1px
+}
+
+.navbar-nav > li {
+   font-size: 30px;
+   margin-right: 65px;
+   word-spacing: 2px;
+   letter-spacing: 1.5px;
+}
+
+.text:hover {
+   color: #18dcff !important;
+   border-bottom: 1px solid #e84393;
+}
+
+
+/* fin de l'entête du site */
+
+.dark, h3, .border-bottom {
+   margin-bottom: 20px;
+   color : var(--dark);
+   text-align: justify;
+}
+
+.appart {
+   margin-top: 50px;
+   
+}
+
+.card-text {
+   text-align: left;
+   background-color: #e84393;
+}
+
+
+.container {
+   max-width : 1000px;
+   margin: 0 auto;
+}
+
+h2 {
+   margin-top: 50px;
+   margin-bottom: 30px;
+   text-align:center;
+}
+
+@media screen and (max-width: 1280px)
+{
+    /* Rédigez vos propriétés CSS ici */
+
+    #quartier > .col > .carousel-slide {
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: green;
+    }
+
+    body {
+       max-width: auto;
+    }
+
+    h1 {
+      font-size: 15px;
+      font-weight: 100;
+    }
+
+    .lead {
+      font-size: 30px;
+      font-weight: 100;
+
+    }
+}

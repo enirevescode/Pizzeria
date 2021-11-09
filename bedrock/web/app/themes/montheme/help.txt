@@ -1,0 +1,5 @@
+pour transformer 1 photo, 1 page ou 1 article en lien, il faut mettre la fonction wp permalink => <a href="<?php the_permalink(); ?"> >
+ça peut se mettre dans 1 titre lui même aut généré :
+<h1><a href="<?php the_permalink();>"><?php the_title(); ?></a></h1>
+
+pour remplacer 1 mot par 1 autre à tous les endroits on fait ctrl c pour copier le mot à incrémenter, on sélectionne le mot à modifier ensuite ctrl d qui appliquera à l'ensemble des mêmes mots et ensuite ctrl c pour écraser
