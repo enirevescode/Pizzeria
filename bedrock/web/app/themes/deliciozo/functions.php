@@ -1,6 +1,6 @@
 <?php
 //création d'1 constante pour la version. dans la fonction il ne faut pas //mettre les '' car c'est 1 constante !
-define('sgmon_version', '1.0.5');
+define('sgmon_version', '1.0.6');
 //chargement de scripts - dar 1 n. de fonction propre
 //chargement dans le front-end
 function sgmontheme_scripts() {	
