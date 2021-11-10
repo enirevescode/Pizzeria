@@ -11,7 +11,7 @@ Text Domain: deliciozo
 /* image ex-jumbotron*/
 .img-fluid {
 
-   position: fixed;
+   /*position: fixed;*/
    top: 0;
    background-repeat: no-repeat;
 }

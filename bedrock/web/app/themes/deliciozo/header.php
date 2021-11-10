@@ -46,5 +46,5 @@
 
 <!--entete-->
 
-<img src="<?php echo get_template_directory_uri(); ?>/assets/restaurant.jpg" class="img-fluid" alt="salle de restauration">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/salle.png" class="img-fluid" alt="salle de restauration">
     </header>
