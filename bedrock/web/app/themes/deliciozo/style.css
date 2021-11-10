@@ -1,0 +1,28 @@
+/*!
+Theme Name: pizzeria_deliciozo
+Theme URI: http://underscores.me/
+Author: enireves
+Author URI: https://enirevescode.fr/
+Description: est 1 theme propriétaire pour 1 site d'1 pizzeria sur place ou à emporter
+Version: 1.0.0
+Text Domain: pizzeria_deliciozo
+*/
+
+/* image ex-jumbotron*/
+.img-fluid {
+
+   position: fixed;
+   top: 0;
+   background-repeat: no-repeat;
+}
+
+#navbar-brand {
+   position: relative;
+   top: 0;
+}
+
+/*footer*/
+
+footer {
+   color: #273c75;
+}

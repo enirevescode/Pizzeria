@@ -14,7 +14,7 @@ function sgmontheme_scripts() {
 	// chargement des scripts
 	// pour que le menu hamburger fonctionne il faut télécharger la library js de bootstrap et donner son chemin
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), sgmon_version, true );
-
+//montheme.js est 1 fichier que g créé pour mettre des fonctions .js
 	wp_enqueue_script( 'sgmon_script', get_template_directory_uri() . '/js/montheme.js', array('jquery', 'bootstrap-js'), sgmon_version, true );
 	
 
@@ -48,7 +48,7 @@ function sgmon_setup() {
 	register_nav_menus(array('primary'=>'principal', 'secondary'=>'footer'));
 
 	// Register Custom Navigation Walker
-	require_once('includes/class-wp-bootstrap-navwalker.php');
+	require_once('includes/bootstrap-5-wordpress-navbar-walker-main.php');
 }
 
 	add_action( 'after_setup_theme', 'sgmon_setup');
