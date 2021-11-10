@@ -9,7 +9,7 @@
 else:
     echo "y a pas de résultat";
 endif;
-die();    
+
   
   
 ?>
