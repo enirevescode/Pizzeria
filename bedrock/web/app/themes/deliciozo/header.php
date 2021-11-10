@@ -4,7 +4,8 @@
   <head>
     <title>Deliciozo Pizzeria</title>
     <!-- <link rel="icon" type= "image" href="favicon.ico" /> -->
-    
+
+       
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/logo.ico" type="image/x-icon"></a>
     <!-- Required meta tags -->
     <!-- balise wp remplace "utf-8"-->
@@ -20,7 +21,7 @@
   <body>
    <header>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +46,16 @@
             </div>
 
 <!--entete-->
+<div class="jumbotron img-fluid">
+      <div class="container">
+       
+        <h1 class="display-4">Deliciozo</h1>
+        <p class="lead">Autentica Pizza Napolitana</p>
+        <p class="lead2">Bienvenudo !</p>
+      </div>
+      
+    </div>
+<container class="jumbo">
+              </container>
 
-<img src="<?php echo get_template_directory_uri(); ?>/assets/salle.png" class="img-fluid" alt="salle de restauration">
     </header>

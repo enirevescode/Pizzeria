@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!--insertion d'1 boucle-->
-<?php if(have_posts()):
+<!-- <?php if(have_posts()):
     while(have_posts()):
           the_post();
           the_title(); echo '<br> <br> <br> <br>' ;
@@ -12,7 +12,7 @@ endif;
 
   
   
-?>
+?> -->
 <section>
    <div class="container">
    <div class="card-group">
