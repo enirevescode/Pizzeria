@@ -63,6 +63,12 @@ h1 {
    color: #f1c40f;
 }
 
+/* SECTION HISTOIRE */
+
+.hist1, .hist2 {
+  text-align: justify;
+  margin: 50px 10px 50px 10px;
+}
 /*footer*/
 
 footer {
