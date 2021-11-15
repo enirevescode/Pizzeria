@@ -80,19 +80,17 @@ function sgdelicio_excerpt_more($more)
 }
 add_filter('excerpt_more', 'sgdelicio_excerpt_more');
 
-//// faire apparaître les widget et sidebar ds le dasboard
+//// faire apparaître les widgets et sidebares ds le dasboard
 
-function sgdelicio_widgets_init()
-{
+function sgdelicio_widgets_init(){
 	register_sidebar(array(
 		'name' => 				'Footer Widget Zone',
 		'description' => 		'Widget affichés dans le footer : 4 au max',
 		'id' => 					'Widgetizd-footer',
-		'before_widget' => 	'<div id="%1$s" class="col-xs-3 %2$s"><div class="inside-widget">',
+		'before_widget' => 	'<div id="%1$s" class="col-xs-12 col-sm-6 col-md-3 %2$s"><div class="inside-widget">',//on rend responsive
 		'after_widget' => 	'</div></div>',
 		'before_title' => 	'<h2 class="h3 text-center">',
 		'after_title' => 		'</h2>',
-
 	));
 }
 add_action('widgets_init', 'sgdelicio_widgets_init');
