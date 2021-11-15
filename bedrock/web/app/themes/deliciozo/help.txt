@@ -3,3 +3,12 @@ pour transformer 1 photo, 1 page ou 1 article en lien, il faut mettre la fonctio
 <h1><a href="<?php the_permalink();>"><?php the_title(); ?></a></h1>
 
 pour remplacer 1 mot par 1 autre à tous les endroits on fait ctrl c pour copier le mot à incrémenter, on sélectionne le mot à modifier ensuite ctrl d qui appliquera à l'ensemble des mêmes mots et ensuite ctrl c pour écraser
+
+Pour mettre des meta données pour les categories et les tag, use this :
+<?php if(is_category()): ?>
+    <meta name="description" content="Le site d'une pizzeria à Paris en France en consommation sur place ou à emporter, commande sans livraison, click 'n collect de pizza Napolitaines"/>
+<?php endif; ?>
+
+<?php if(is_tag()): ?>
+    <meta name="description" content="Le site d'une pizzeria à Paris en France en consommation sur place ou à emporter, commande sans livraison, click 'n collect de pizza Napolitaines"/>
+<?php endif; ?>

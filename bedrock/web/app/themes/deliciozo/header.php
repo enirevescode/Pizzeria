@@ -11,8 +11,20 @@
   <!-- balise wp remplace "utf-8"-->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- meta données publicitaires voir help pr categorie et tag-->
 
-  <meta name="description" content="">
+<?php if(is_home()): ?>
+    <meta name="description" content="Le site d'une pizzeria à Paris en France en consommation sur place ou à emporter, commande sans livraison, click 'n collect de pizza Napolitaines"/>
+<?php endif; ?>
+
+<?php if(is_front_page()): ?>
+    <meta name="description" content="Le site d'une pizzeria à Paris en France en consommation sur place ou à emporter, commande sans livraison, click 'n collect de pizza Napolitaines"/>
+<?php endif; ?>
+
+<?php if(is_page() && !is_front_page()): ?>
+    <meta name="description" content="Le site d'une pizzeria à Paris en France en consommation sur place ou à emporter, commande sans livraison, click 'n collect de pizza Napolitaines"/>
+<?php endif; ?>
+
 
   <!-- insertion de la feuille de style -->
   <?php wp_head(); ?>
@@ -21,14 +33,6 @@
 
 <body>
   <header>
-
-    <!-- <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand mb-20px" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <!--fonction qui permet de ramener à la page accueil-->
       <div class="container-fluid">
