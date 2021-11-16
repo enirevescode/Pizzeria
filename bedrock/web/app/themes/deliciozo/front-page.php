@@ -33,16 +33,16 @@
       </div>
 
       <div class="row mx-5 my-5">
-<div class="col-3">
-   <p>Adresse</p>
-</div>
-<div class="col-6">
-   <p>15, Avenue des Champignons dorés - 995960 BIGNOU LE CROQUANT</p>
-</div>
-<div class="col-3 d-grid gap-3">
-<button type="button" class="btn3 btn-primary">Plan et Itinéraire</button>
-<button type="button" class="btn4 btn-primary">Info tarif</button>
-</div>
+         <div class="col-3">
+            <p>Adresse</p>
+         </div>
+         <div class="col-6">
+            <p>15, Avenue des Champignons dorés - 995960 BIGNOU LE CROQUANT</p>
+         </div>
+         <div class="col-3 d-grid gap-3">
+            <button type="button" class="btn3 btn-primary">Plan et Itinéraire</button>
+            <button type="button" class="btn4 btn-primary">Info tarif</button>
+         </div>
       </div>
    </div>
 </section>
