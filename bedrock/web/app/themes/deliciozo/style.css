@@ -65,9 +65,8 @@ h1 {
 
 /* SECTION HISTOIRE */
 
-.hist1, .hist2 {
-  text-align: justify;
-  margin: 50px 10px 50px 10px;
+.btn1, .btn2 {
+  /* display: grid */
 }
 /*footer*/
 
