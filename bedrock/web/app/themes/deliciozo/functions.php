@@ -21,6 +21,9 @@ function sgmontheme_scripts()
 
 add_action('wp_enqueue_scripts', 'sgmontheme_scripts');
 
+// Ajouter la prise en charge des images mises en avant
+add_theme_support( 'post-thumbnails' );
+
 // chargement dans l'admin de wp
 function sgdelicio_admin_scripts()
 {

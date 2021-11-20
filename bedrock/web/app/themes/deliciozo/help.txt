@@ -1,7 +1,3 @@
-*** Rendre 1 photo ou texte en lien ***
-pour transformer 1 photo, 1 page ou 1 article en lien, il faut mettre la fonction wp permalink => <a href="<?php the_permalink(); ?"> >
-ça peut se mettre dans 1 titre lui même aut généré :
-<h1><a href="<?php the_permalink();>"><?php the_title(); ?></a></h1>
 
 *** Manpulation ds vsc ***
 pour remplacer 1 mot par 1 autre à tous les endroits on fait ctrl c pour copier le mot à incrémenter, on sélectionne le mot à modifier ensuite ctrl d qui appliquera à l'ensemble des mêmes mots et ensuite ctrl c pour écraser
@@ -25,3 +21,5 @@ ul.deliciozo-pager
 <li class='pull-left'> <?php previous_post_link(); ?></li> // pull left et right sont des class de bootstrap//
 <li class='pull-right'> <?php next_post_link(); ?></li></ul>
 </nav>
+
+Ne pas confondre get_header() qui permet d’appeler le fichier d’en-tête et wp_head() qui permet de récupérer les scripts et styles. 

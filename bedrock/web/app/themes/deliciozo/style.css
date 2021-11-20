@@ -12,9 +12,9 @@ Text Domain: deliciozo
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /* MENU */
-.navbar-brand{
-   margin-top: 19px;
-}
+/* .navbar-brand{
+   margin-top: 550px;
+} */
 
 /* image ex-jumbotron*/
 .jumbotron{
@@ -23,7 +23,7 @@ Text Domain: deliciozo
   height: 750px;
   background-repeat: no-repeat;
   margin-bottom: 50px;
-  margin-top: 0;
+  top: 0px;
 }
 
 /* message d'accueil */

@@ -47,12 +47,21 @@
    </div>
 </section>
 
-<section>
-   <div class="container">
-      <?php if (have_posts()) : ?>
-         <!--insertion d'1 boucle-->
-         <?php while (have_posts()) :  the_post(); ?>
+  <!-- requetes pizza à la 1 -->
+   <?php
+   $args_pizza = array(
+      'post_type' => 'post',
+      'posts_per_page' => 2
+   );
+   $req_pizza = new WP_QUERY($args_pizza);
+   ?>
 
+      <?php /*if ($wp_query ->have_posts()) : ?><!--insertion d'1 boucle-->
+       <?php while ($wp_query ->have_posts()) :  $wp_query ->the_post(); ?>
+         <?php echo $post->post_title; */?>
+<section id=>
+   
+<div class="container">
             <div class="card-group">
                <div class="card">
                   <img src="..." class="card-img-top" alt="...">
@@ -71,14 +80,14 @@
                   </div>
                </div>
             </div>
-         <?php endwhile; ?>
-      <?php else : ?>
+          <?php //endwhile; ?>
+      <?//php else : ?>
          <div class="row">
             <div class="col-xs-12">
                <p>y a pas de résultats</p>
             </div>
             <!--fin row-->
-         <?php endif; ?>
+         <?php //endif; ?>
          </div>
          <!--fin container-->
 

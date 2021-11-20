@@ -5,7 +5,7 @@
 <head>
   <title>Deliciozo Pizzeria</title>
 
-
+  <a href="<?php echo home_url( '/' ); ?>">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/ikone_pizza.png" type="image/x-icon"></a>
   <!-- Required meta tags -->
   <!-- balise wp remplace "utf-8"-->
@@ -25,14 +25,19 @@
     <meta name="description" content="Le site d'une pizzeria à Paris en France en consommation sur place ou à emporter, commande sans livraison, click 'n collect de pizza Napolitaines"/>
 <?php endif; ?>
 
-
-  <!-- insertion de la feuille de style -->
   <?php wp_head(); ?>
 
 </head>
+<!-- La classe home permet d’appliquer des styles différents des autres pages. logged pr les users connectés admin-bar pr la bar WP-->
+<body <?php body_class(); ?>>
+<body class="home blog">
 
-<body>
+<!-- permet aux extensions d’écrire du code au début du body. C’est utile notamment pour Yoast qui vient y placer le Google Tag Manager et autres codes de scripts. -->
+<?php wp_body_open(); ?>
+
   <header>
+
+  <a href="<?php echo home_url( '/' ); ?>">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <!--fonction qui permet de ramener à la page accueil-->
       <div class="container-fluid">
