@@ -9,15 +9,20 @@
 	<?php while( have_posts() ) : the_post(); ?>
             <div class="card-group">
                <div class="card">
-                  <img src="<?php the_post_thumbnail('thumbnail'); ?>" class="card-img-top" alt="Photo de pizza">
+               <?php 
+	$image_id = get_field( 'photo' ); // On récupère l'ID
+	if( $image_id ) {	
+		echo wp_get_attachment_image( $image_id, 'full' );
+    } ?>
                   <div class="card-body">
                      <h5 class="card-title"><?php the_title(); ?></h5>
-                     <p class="card-text"><?php the_content('description'); ?></p>
-                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                     <p class="card-text"><?php echo get_post_meta( get_the_ID(), 'description', true ); ?></p>
+                     <p class="card-text"><?php echo get_post_meta( get_the_ID(), 'prix', true ); ?>€</p>
                   </div>
                </div>
                
             </div>
+            <?php echo '<br>'; ?>
         <?php endwhile; endif; ?>
 
 <!-- <div class='row'>
