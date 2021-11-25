@@ -63,11 +63,26 @@ h1 {
    color: #f1c40f;
 }
 
+.pizze  h1{ text-align: center; margin: 0 0 20px 0; }
+.pizze-photo{
+    float: left;
+    margin: 0 10px;
+}
+.pizze-informations{
+    float: left;
+    width: 350px;
+    margin: 0 10px;
+}
+.pizza-description{
+font-style : italic;
+margin: 20px 0 0 0;
+}
+
 /* SECTION HISTOIRE */
 
-.btn1, .btn2 {
+/* .btn1, .btn2 {
   /* display: grid */
-}
+/* } */ 
 /*footer*/
 
 footer {

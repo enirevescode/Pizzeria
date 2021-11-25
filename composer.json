@@ -10,5 +10,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "stoutlogic/acf-builder": "^1.12"
+    }
 }
