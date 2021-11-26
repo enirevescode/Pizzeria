@@ -12,9 +12,9 @@
                 Publié le <?php the_time( get_option( 'date_format' ) ); ?> 
                 par <?php the_author(); ?> • <?php comments_number('0', '1', '%'); ?>
             </p>
-            
+
       		<?php the_excerpt(); ?>
-              
+
       		<p>
                 <a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
             </p>

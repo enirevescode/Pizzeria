@@ -47,7 +47,7 @@
    </div>
 </section>
 
- <?php get_template_part( 'archive' ); ?>
+ <?php get_template_part( 'archive-pizze' ); ?>
 
   <!-- requetes pizza à la 1 -->
    <?php
