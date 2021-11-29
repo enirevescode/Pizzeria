@@ -33,7 +33,7 @@ function sgdelicio_admin_scripts()
 }
 add_action('admin_init', 'sgdelicio_admin_scripts');
 
-///////////////////////////////////// UTILITAIRES
+//////////////////////////////// UTILITAIRES
 
 function sgdelicio_setup()
 {

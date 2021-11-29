@@ -46,18 +46,12 @@
       </div>
    </div>
 </section>
+<section class="pizze">
+<div class="container">
 
  <?php get_template_part( 'archive-pizze' ); ?>
 
-  <!-- requetes pizza à la 1 -->
-   <?php
-   $args_pizza = array(
-      'post_type' => 'post',
-      'posts_per_page' => 1
-   );
-   $req_pizza = new WP_QUERY($args_pizza);
-   ?>
+<div>
 
-
-
+</section>
 <?php get_footer(); ?>
